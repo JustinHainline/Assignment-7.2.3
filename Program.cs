@@ -13,7 +13,9 @@
             if (s.Length != t.Length)
                 return false;
 
-            int[] charCount = new int[26]; // Assuming lowercase English letters
+            int[] charCount = new int[26];  // Assuming lowercase English letters
+            s = s.ToLower();
+            t = t.ToLower();
 
             // Count characters in s
             foreach (char c in s)
